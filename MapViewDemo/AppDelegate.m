@@ -1,3 +1,12 @@
+// Copyright 2013 ESRI
+//
+// All rights reserved under the copyright laws of the United States
+// and applicable international laws, treaties, and conventions.
+// You may freely redistribute and use this sample code, with or
+// without modification, provided you include the original copyright
+// notice and use restrictions.
+// See the use restrictions at http://help.arcgis.com/en/sdk/10.0/usageRestrictions.htm
+
 #import "AppDelegate.h"
 #import "EAFKit.h"
 
@@ -11,6 +20,7 @@
     NSPopover *_popover;
     EAFFindPlacesViewController *_findVC;
     EAFFindPlacesResultsViewController *_findResultsVC;
+    EAFMeasureViewController *_measureVC;
 }
 @end
 
@@ -127,6 +137,14 @@
     _popover.contentViewController = _basemapsVC;
     [_popover showRelativeToRect:sender.bounds ofView:sender preferredEdge:NSMaxYEdge];
 }
+
+- (IBAction)measureAction:(id)sender {
+    if (!_measureVC){
+        _measureVC = [[EAFMeasureViewController alloc]init];
+    }
+    [self showInLeftContainer:_measureVC];
+}
+
 @end
 
 

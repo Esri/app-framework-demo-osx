@@ -20,5 +20,6 @@
 - (IBAction)contentsAction:(id)sender;
 - (IBAction)basemapsAction:(NSButton *)sender;
 @property (weak) IBOutlet NSView *findContainer;
+- (IBAction)measureAction:(id)sender;
 
 @end
