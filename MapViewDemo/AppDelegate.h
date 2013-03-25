@@ -19,5 +19,6 @@
 @property (weak) IBOutlet NSBox *leftContainer;
 - (IBAction)contentsAction:(id)sender;
 - (IBAction)basemapsAction:(NSButton *)sender;
+@property (weak) IBOutlet NSView *findContainer;
 
 @end

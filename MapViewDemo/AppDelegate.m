@@ -9,6 +9,8 @@
     EAFPopupManagerViewController *_popupMgrVC;
     EAFBasemapsViewController *_basemapsVC;
     NSPopover *_popover;
+    EAFFindPlacesViewController *_findVC;
+    EAFFindPlacesResultsViewController *_findResultsVC;
 }
 @end
 
@@ -18,12 +20,37 @@
 {
 }
 
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
+}
+
 -(void)awakeFromNib{
     [EAFAppContext sharedAppContext].mapView = _mapView;
     _mapView.touchDelegate = self;
     
     _portal = [[AGSPortal alloc]initWithURL:[NSURL URLWithString:@"http://www.arcgis.com"] credential:nil];
     _portal.delegate = self;
+    
+    _findVC = [[EAFFindPlacesViewController alloc]init];
+    [_findVC eaf_addToContainerWithConstraints:_findContainer];
+    
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(didFindPlaces:) name:EAFFindPlacesViewControllerDidFindPlacesNotification object:_findVC];
+    
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(didClearSearch:) name:EAFFindPlacesViewControllerDidClearSearchNotification object:_findVC];
+}
+
+#pragma mark notification handlers
+
+-(void)didFindPlaces:(NSNotification*)note{
+    if (!_findResultsVC){
+        _findResultsVC = [[EAFFindPlacesResultsViewController alloc]init];
+    }
+    _findResultsVC.results = _findVC.results;
+    [self showInLeftContainer:_findResultsVC];
+}
+
+-(void)didClearSearch:(NSNotification*)note{
+    _findResultsVC.results = nil;
 }
 
 #pragma mark view swapping
