@@ -12,18 +12,9 @@
 
 #import <Cocoa/Cocoa.h>
 
-//contants for data layers
-#define kTiledMapServiceURL @"http://server.arcgisonline.com/ArcGIS/rest/services/ESRI_StreetMap_World_2D/MapServer"
-#define kDynamicMapServiceURL @"http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Specialty/ESRI_StateCityHighway_USA/MapServer"
-
-//Set up constant for predefined where clause for search
-#define kLayerDefinitionFormat @"STATE_NAME = '%@'"
-
-@interface AppDelegate : NSObject <NSApplicationDelegate, AGSMapViewLayerDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
 @property (strong) IBOutlet AGSMapView *mapView;
-@property (strong) AGSDynamicMapServiceLayer *dynamicLayer;
 
-- (IBAction)opacitySliderValueChanged:(id)sender;
 @end
