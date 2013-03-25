@@ -16,5 +16,7 @@
 
 @property (assign) IBOutlet NSWindow *window;
 @property (strong) IBOutlet AGSMapView *mapView;
+@property (weak) IBOutlet NSBox *leftContainer;
+- (IBAction)contentsAction:(id)sender;
 
 @end
