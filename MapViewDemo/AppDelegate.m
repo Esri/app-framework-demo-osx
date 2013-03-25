@@ -1,11 +1,12 @@
 #import "AppDelegate.h"
 #import "EAFKit.h"
 
-@interface AppDelegate () <AGSPortalDelegate, AGSWebMapDelegate>{
+@interface AppDelegate () <AGSPortalDelegate, AGSWebMapDelegate, AGSMapViewTouchDelegate>{
     AGSPortal *_portal;
     AGSWebMap *_webmap;
     EAFTOCViewController *_tocVC;
     NSViewController *_lastVCShown;
+    EAFPopupManagerViewController *_popupMgrVC;
 }
 @end
 
@@ -17,6 +18,8 @@
 
 -(void)awakeFromNib{
     [EAFAppContext sharedAppContext].mapView = _mapView;
+    _mapView.touchDelegate = self;
+    
     _portal = [[AGSPortal alloc]initWithURL:[NSURL URLWithString:@"http://www.arcgis.com"] credential:nil];
     _portal.delegate = self;
 }
@@ -56,6 +59,25 @@
 
 -(void)didOpenWebMap:(AGSWebMap *)webMap intoMapView:(AGSMapView *)mapView{
     [self contentsAction:nil];
+}
+
+#pragma mark mapview touch delegate
+
+-(void)mapView:(AGSMapView *)mapView didClickAtPoint:(CGPoint)screen mapPoint:(AGSPoint *)mappoint graphics:(NSDictionary *)graphics{
+    
+    if (![_webmap hasPopupsDefined]){
+        return;
+    }
+    
+    if (!_popupMgrVC){
+        _popupMgrVC  = [[EAFPopupManagerViewController alloc]init];
+    }
+    
+    if (![_popupMgrVC fetchPopupsForPoint:mappoint]){
+        return;
+    }
+    
+    [self showInLeftContainer:_popupMgrVC];
 }
 
 #pragma mark actions
