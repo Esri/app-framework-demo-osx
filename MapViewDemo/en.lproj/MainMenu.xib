@@ -1294,7 +1294,7 @@
 			<object class="NSWindowTemplate" id="972006081">
 				<int key="NSWindowStyleMask">15</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{335, 390}, {544, 453}}</string>
+				<string key="NSWindowRect">{{335, 390}, {672, 453}}</string>
 				<int key="NSWTFlags">1954021376</int>
 				<string key="NSWindowTitle">MapViewDemo</string>
 				<string key="NSWindowClass">NSWindow</string>
@@ -1308,15 +1308,16 @@
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">268</int>
 							<array class="NSMutableArray" key="NSSubviews"/>
-							<string key="NSFrameSize">{544, 453}</string>
+							<string key="NSFrameSize">{672, 453}</string>
 							<reference key="NSSuperview" ref="439893737"/>
+							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<string key="NSClassName">AGSMapView</string>
 						</object>
 					</array>
-					<string key="NSFrameSize">{544, 453}</string>
+					<string key="NSFrameSize">{672, 453}</string>
 					<reference key="NSSuperview"/>
-					<reference key="NSNextKeyView" ref="263129718"/>
+					<reference key="NSNextKeyView"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1024, 618}}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
@@ -2544,7 +2545,7 @@
 						<int key="objectID">372</int>
 						<reference key="object" ref="439893737"/>
 						<array class="NSMutableArray" key="children">
-							<object class="IBNSLayoutConstraint" id="228541384">
+							<object class="IBNSLayoutConstraint" id="84262223">
 								<reference key="firstItem" ref="263129718"/>
 								<int key="firstAttribute">4</int>
 								<int key="relation">0</int>
@@ -3092,8 +3093,13 @@
 						<reference key="parent" ref="439893737"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">561</int>
-						<reference key="object" ref="228088613"/>
+						<int key="objectID">564</int>
+						<reference key="object" ref="187663133"/>
+						<reference key="parent" ref="439893737"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">587</int>
+						<reference key="object" ref="84262223"/>
 						<reference key="parent" ref="439893737"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -3102,13 +3108,8 @@
 						<reference key="parent" ref="439893737"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">564</int>
-						<reference key="object" ref="187663133"/>
-						<reference key="parent" ref="439893737"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">587</int>
-						<reference key="object" ref="228541384"/>
+						<int key="objectID">561</int>
+						<reference key="object" ref="228088613"/>
 						<reference key="parent" ref="439893737"/>
 					</object>
 				</array>
@@ -3181,7 +3182,7 @@
 					<reference ref="228088613"/>
 					<reference ref="637998389"/>
 					<reference ref="187663133"/>
-					<reference ref="228541384"/>
+					<reference ref="84262223"/>
 				</array>
 				<string key="372.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="375.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -3285,7 +3286,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">587</int>
+			<int key="maxID">609</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
