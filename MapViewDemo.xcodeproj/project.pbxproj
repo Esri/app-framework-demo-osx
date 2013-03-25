@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B91A52516F7D4B600F1DF1A /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD4172D16B07682002E972B /* Quartz.framework */; };
+		4B92ADCC16B30088004CA85E /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B92ADCB16B30088004CA85E /* QTKit.framework */; };
+		4BD4170316B07404002E972B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD4170216B07404002E972B /* Cocoa.framework */; };
+		4BD4170D16B07404002E972B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BD4170B16B07404002E972B /* InfoPlist.strings */; };
+		4BD4170F16B07404002E972B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD4170E16B07404002E972B /* main.m */; };
+		4BD4171316B07404002E972B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4BD4171116B07404002E972B /* Credits.rtf */; };
+		4BD4171616B07404002E972B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD4171516B07404002E972B /* AppDelegate.m */; };
+		4BD4171916B07404002E972B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BD4171716B07404002E972B /* MainMenu.xib */; };
+		4BD4172416B07466002E972B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD4172316B07466002E972B /* OpenGL.framework */; };
+		4BD4172616B0746B002E972B /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD4172516B0746B002E972B /* libc++.dylib */; };
+		4BD4172C16B07659002E972B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD4172B16B07659002E972B /* Security.framework */; };
+		4BD4173016B0768E002E972B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD4172F16B0768E002E972B /* CoreLocation.framework */; };
+		881754C116FF7C2300F65286 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881754C016FF7C2300F65286 /* WebKit.framework */; };
+		88CCE12116FEAF2A005A5D69 /* ArcGIS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 88CCE12016FEAF2A005A5D69 /* ArcGIS.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B92ADCB16B30088004CA85E /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		4BD416FE16B07404002E972B /* MapViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD4170216B07404002E972B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4BD4170516B07404002E972B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4BD4170616B07404002E972B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4BD4170716B07404002E972B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4BD4170A16B07404002E972B /* MapViewDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MapViewDemo-Info.plist"; sourceTree = "<group>"; };
+		4BD4170C16B07404002E972B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4BD4170E16B07404002E972B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4BD4171016B07404002E972B /* MapViewDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MapViewDemo-Prefix.pch"; sourceTree = "<group>"; };
+		4BD4171216B07404002E972B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		4BD4171416B07404002E972B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4BD4171516B07404002E972B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4BD4171816B07404002E972B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4BD4172316B07466002E972B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		4BD4172516B0746B002E972B /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		4BD4172B16B07659002E972B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4BD4172D16B07682002E972B /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		4BD4172F16B0768E002E972B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		881754C016FF7C2300F65286 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		88CCE12016FEAF2A005A5D69 /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ArcGIS.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BD416FB16B07404002E972B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				881754C116FF7C2300F65286 /* WebKit.framework in Frameworks */,
+				4B92ADCC16B30088004CA85E /* QTKit.framework in Frameworks */,
+				4BD4173016B0768E002E972B /* CoreLocation.framework in Frameworks */,
+				4B91A52516F7D4B600F1DF1A /* Quartz.framework in Frameworks */,
+				4BD4172C16B07659002E972B /* Security.framework in Frameworks */,
+				4BD4172616B0746B002E972B /* libc++.dylib in Frameworks */,
+				4BD4172416B07466002E972B /* OpenGL.framework in Frameworks */,
+				4BD4170316B07404002E972B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BD416F316B07404002E972B = {
+			isa = PBXGroup;
+			children = (
+				88CCE12016FEAF2A005A5D69 /* ArcGIS.bundle */,
+				4BD4170816B07404002E972B /* MapViewDemo */,
+				4BD4170116B07404002E972B /* Frameworks */,
+				4BD416FF16B07404002E972B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4BD416FF16B07404002E972B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BD416FE16B07404002E972B /* MapViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BD4170116B07404002E972B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				881754C016FF7C2300F65286 /* WebKit.framework */,
+				4B92ADCB16B30088004CA85E /* QTKit.framework */,
+				4BD4172F16B0768E002E972B /* CoreLocation.framework */,
+				4BD4172D16B07682002E972B /* Quartz.framework */,
+				4BD4172B16B07659002E972B /* Security.framework */,
+				4BD4172516B0746B002E972B /* libc++.dylib */,
+				4BD4172316B07466002E972B /* OpenGL.framework */,
+				4BD4170216B07404002E972B /* Cocoa.framework */,
+				4BD4170416B07404002E972B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BD4170416B07404002E972B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BD4170516B07404002E972B /* AppKit.framework */,
+				4BD4170616B07404002E972B /* CoreData.framework */,
+				4BD4170716B07404002E972B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4BD4170816B07404002E972B /* MapViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4BD4170916B07404002E972B /* Supporting Files */,
+				4BD4171416B07404002E972B /* AppDelegate.h */,
+				4BD4171516B07404002E972B /* AppDelegate.m */,
+				4BD4171716B07404002E972B /* MainMenu.xib */,
+			);
+			path = MapViewDemo;
+			sourceTree = "<group>";
+		};
+		4BD4170916B07404002E972B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BD4170A16B07404002E972B /* MapViewDemo-Info.plist */,
+				4BD4170B16B07404002E972B /* InfoPlist.strings */,
+				4BD4170E16B07404002E972B /* main.m */,
+				4BD4171016B07404002E972B /* MapViewDemo-Prefix.pch */,
+				4BD4171116B07404002E972B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BD416FD16B07404002E972B /* MapViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BD4171C16B07404002E972B /* Build configuration list for PBXNativeTarget "MapViewDemo" */;
+			buildPhases = (
+				4BD416FA16B07404002E972B /* Sources */,
+				4BD416FB16B07404002E972B /* Frameworks */,
+				4BD416FC16B07404002E972B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MapViewDemo;
+			productName = MapViewDemo;
+			productReference = 4BD416FE16B07404002E972B /* MapViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BD416F516B07404002E972B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Esri;
+			};
+			buildConfigurationList = 4BD416F816B07404002E972B /* Build configuration list for PBXProject "MapViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4BD416F316B07404002E972B;
+			productRefGroup = 4BD416FF16B07404002E972B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BD416FD16B07404002E972B /* MapViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BD416FC16B07404002E972B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD4170D16B07404002E972B /* InfoPlist.strings in Resources */,
+				4BD4171316B07404002E972B /* Credits.rtf in Resources */,
+				4BD4171916B07404002E972B /* MainMenu.xib in Resources */,
+				88CCE12116FEAF2A005A5D69 /* ArcGIS.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BD416FA16B07404002E972B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD4170F16B07404002E972B /* main.m in Sources */,
+				4BD4171616B07404002E972B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4BD4170B16B07404002E972B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BD4170C16B07404002E972B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4BD4171116B07404002E972B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BD4171216B07404002E972B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		4BD4171716B07404002E972B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BD4171816B07404002E972B /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4BD4171A16B07404002E972B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = $HOME/Library/SDKs/ArcGIS/OSX;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4BD4171B16B07404002E972B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = $HOME/Library/SDKs/ArcGIS/OSX;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4BD4171D16B07404002E972B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MapViewDemo/MapViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "MapViewDemo/MapViewDemo-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					ArcGIS,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4BD4171E16B07404002E972B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MapViewDemo/MapViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "MapViewDemo/MapViewDemo-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					ArcGIS,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BD416F816B07404002E972B /* Build configuration list for PBXProject "MapViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BD4171A16B07404002E972B /* Debug */,
+				4BD4171B16B07404002E972B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BD4171C16B07404002E972B /* Build configuration list for PBXNativeTarget "MapViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BD4171D16B07404002E972B /* Debug */,
+				4BD4171E16B07404002E972B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BD416F516B07404002E972B /* Project object */;
+}
