@@ -7,6 +7,8 @@
     EAFTOCViewController *_tocVC;
     NSViewController *_lastVCShown;
     EAFPopupManagerViewController *_popupMgrVC;
+    EAFBasemapsViewController *_basemapsVC;
+    NSPopover *_popover;
 }
 @end
 
@@ -89,5 +91,15 @@
     [self showInLeftContainer:_tocVC];
 }
 
-
+- (IBAction)basemapsAction:(NSButton *)sender {
+    if (!_basemapsVC){
+        _basemapsVC = [[EAFBasemapsViewController alloc]init];
+    }
+    _popover = [[NSPopover alloc]init];
+    _popover.behavior = NSPopoverBehaviorTransient;
+    _popover.contentViewController = _basemapsVC;
+    [_popover showRelativeToRect:sender.bounds ofView:sender preferredEdge:NSMaxYEdge];
+}
 @end
+
+

@@ -18,5 +18,6 @@
 @property (strong) IBOutlet AGSMapView *mapView;
 @property (weak) IBOutlet NSBox *leftContainer;
 - (IBAction)contentsAction:(id)sender;
+- (IBAction)basemapsAction:(NSButton *)sender;
 
 @end
