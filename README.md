@@ -1,23 +1,30 @@
 # eaf-framework-for-os-x
 
-This is a demo that shows how to use the EAF (ESRI Application Framework). The EAF is a sample framework that contains course grained view controllers written on top of the Esri ArcGIS Runtime SDK for OS X.
+This is a simple application for viewing maps on Apple Mac OS X.  
 
-The ArcGIS Runtime Preview application is built on the EAF. You can download this here:[http://www.arcgis.com/home/item.html?id=038213d942cc4db49b1c5bc716377721]
+This ArcGIS Runtime Preview application is built on the [Esri Application Framework](http://www.arcgis.com/home/item.html?id=038213d942cc4db49b1c5bc716377721), or EAF. The EAF is a sample framework that contains course grained view controllers written on top of the Esri ArcGIS Runtime SDK for OS X.
 
 To use the EAF Framework you must installed the ArcGIS Runtime SDK for OS X 10.2 Beta.
 
-## Third party controls used in this sample
-
-* EDSidebar [https://github.com/erndev/EDSidebar]
+![ArcGIS for OS X](http://blogs.esri.com/esri/arcgis/files/2013/03/Screen-Shot-2013-03-18-at-3.06.22-PM-300x190.png)
 
 ## Features
-* Sample using the ArcGIS Runtime SDK for OS X
-* All features supported by the ArcGIS Runtime SDK for OS X
+
+All features supported by the ArcGIS Runtime SDK for OS X:
+
+* Display web maps that have been authored on www.ArcGIS.com or your own on-premise ArcGIS portals.
+* Mashup map services from ArcGIS Online and/or your own on-premise ArcGIS Server to create unique maps.
+* Display information about features in a map using popups
+* Search for features in a map using spatial or SQL criteria.
+* Execute sophisticated geoprocessing tasks and display their results.
+* Sketch points, lines and polygons on the map.
+* Match addresses to locations (geocode) and locations to addresses (reverse-geocode)
+* Perform geometric operations and compute spatial relationships between features.
 
 ## Instructions
 
 1. Download and unzip the .zip file or clone the repo.
-2. Open with xCode and replace it with your provision file.
+2. Open with [Xcode](https://developer.apple.com/xcode/) and replace it with your provision file.
 
 [New to Github? Get started here.](https://github.com/)
 
@@ -25,14 +32,18 @@ To use the EAF Framework you must installed the ArcGIS Runtime SDK for OS X 10.2
 
 * xCode 4.6 and above
 * A little background with iPhone development or Mac development and Objective-C
-* Experience with the [ArcGIS Runtime SDK for iOS] or [ArcGIS Runtime SDK for OS X](http://www.esri.com/) would help.
-* This demo requires the ArcGIS Runtime SDK for OS X 10.2 Beta [http://resources.arcgis.com/en/help/runtime-osx-sdk/concepts/]
+* Experience with the [ArcGIS Runtime SDK for iOS](http://developers.arcgis.com/en/ios/) or [ArcGIS Runtime SDK for OS X](http://developers.arcgis.com/en/os-x/) would help.
+* This demo requires the [ArcGIS Runtime SDK for OS X 10.2 Beta](http://resources.arcgis.com/en/help/runtime-osx-sdk/concepts/)
+
+## Third party controls
+
+* [EDSidebar](https://github.com/erndev/EDSidebar)
 
 ## Resources
 
-* [ArcGIS Runtime SDK for OS X](http://resources.arcgis.com/en/communities/runtime-osx-sdk/)
+* [ArcGIS Runtime SDK for OS X](http://developers.arcgis.com/en/os-x/)
 * [ArcGIS Blog](http://blogs.esri.com/esri/arcgis/)
-* [twitter@arcgis_runtime](http://twitter.com/arcgis_runtime)
+* [Twitter: @arcgis_runtime](http://twitter.com/arcgis_runtime)
 
 ## Issues
 
@@ -57,7 +68,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-A copy of the license is available in the repository's [license.txt]( https://raw.github.com/Esri/switch-basemaps-js/master/license.txt) file.
+A copy of the license is available in the repository's [license.txt]( https://raw.github.com/Esri/app-framework-demo-osx/license.txt) file.
 
 [](Esri Tags: OS X Mac EAF Sample)
 [](Esri Language: Objective-C)
