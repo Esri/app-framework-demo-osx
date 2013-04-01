@@ -4,9 +4,9 @@ This is a demo that shows how to use the EAF (Esri Application Framework). The E
 
 This is the demo app that was shown in the ArcGIS Runtime for OS X session at the 2013 Esri Developer Summit.
 
-To use the EAF you must installed the ArcGIS Runtime SDK for OS X 10.2 Beta.
+To use the EAF you must installed the [ArcGIS Runtime SDK for OS X 10.2 Beta](http://developers.arcgis.com/en/os-x/)
 
-Another example of using the EAF is the ArcGIS Runtime Preview application. You can download source for that application here:[http://www.arcgis.com/home/item.html?id=038213d942cc4db49b1c5bc716377721]
+Another example of using the EAF is the [ArcGIS Runtime Preview application](http://www.arcgis.com/home/item.html?id=db0e7ce0bd5143faaff25e8588848d3d). You can download source for that application [here](http://www.arcgis.com/home/item.html?id=038213d942cc4db49b1c5bc716377721)
 
 ## Third party controls used in this sample
 
@@ -17,7 +17,7 @@ Another example of using the EAF is the ArcGIS Runtime Preview application. You 
 * Sample using the Esri Application Framework
 
 ## Instructions
-1. Download and install the ArcGIS Runtime SDK for OS X
+1. Download and install the [ArcGIS Runtime SDK for OS X](http://developers.arcgis.com/en/os-x/)
 2. Download and unzip the .zip file or clone the repo.
 3. Open with xCode then build and run
 
@@ -27,8 +27,8 @@ Another example of using the EAF is the ArcGIS Runtime Preview application. You 
 
 * xCode 4.6 and above
 * A little background with iPhone development or Mac development and Objective-C
-* Experience with the [ArcGIS Runtime SDK for iOS] or [ArcGIS Runtime SDK for OS X](http://developers.arcgis.com/) would help.
-* This demo requires the ArcGIS Runtime SDK for OS X 10.2 Beta [http://developers.arcgis.com/en/os-x/]
+* Experience with the [ArcGIS Runtime SDK for iOS](http://developers.arcgis.com/en/ios/) or [ArcGIS Runtime SDK for OS X](http://developers.arcgis.com/en/os-x/) would help.
+* This demo requires the [ArcGIS Runtime SDK for OS X 10.2 Beta](http://developers.arcgis.com/en/os-x/)
 
 ## Resources
 
