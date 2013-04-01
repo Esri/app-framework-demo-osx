@@ -1,10 +1,12 @@
-# eaf-framework-for-os-x
+# app-framework-demo-osx
 
-This is a demo that shows how to use the EAF (ESRI Application Framework). The EAF is a sample framework that contains course grained view controllers written on top of the Esri ArcGIS Runtime SDK for OS X.
+This is a demo that shows how to use the EAF (Esri Application Framework). The EAF is a sample framework that contains course grained view controllers written on top of the Esri ArcGIS Runtime SDK for OS X.
 
-The ArcGIS Runtime Preview application is built on the EAF. You can download this here:[http://www.arcgis.com/home/item.html?id=038213d942cc4db49b1c5bc716377721]
+This is the demo app that was shown in the ArcGIS Runtime for OS X session at the 2013 Esri Developer Summit.
 
-To use the EAF Framework you must installed the ArcGIS Runtime SDK for OS X 10.2 Beta.
+To use the EAF you must installed the ArcGIS Runtime SDK for OS X 10.2 Beta.
+
+Another example of using the EAF is the ArcGIS Runtime Preview application. You can download source for that application here:[http://www.arcgis.com/home/item.html?id=038213d942cc4db49b1c5bc716377721]
 
 ## Third party controls used in this sample
 
@@ -12,12 +14,12 @@ To use the EAF Framework you must installed the ArcGIS Runtime SDK for OS X 10.2
 
 ## Features
 * Sample using the ArcGIS Runtime SDK for OS X
-* All features supported by the ArcGIS Runtime SDK for OS X
+* Sample using the Esri Application Framework
 
 ## Instructions
-
-1. Download and unzip the .zip file or clone the repo.
-2. Open with xCode and replace it with your provision file.
+1. Download and install the ArcGIS Runtime SDK for OS X
+2. Download and unzip the .zip file or clone the repo.
+3. Open with xCode then build and run
 
 [New to Github? Get started here.](https://github.com/)
 
@@ -25,12 +27,12 @@ To use the EAF Framework you must installed the ArcGIS Runtime SDK for OS X 10.2
 
 * xCode 4.6 and above
 * A little background with iPhone development or Mac development and Objective-C
-* Experience with the [ArcGIS Runtime SDK for iOS] or [ArcGIS Runtime SDK for OS X](http://www.esri.com/) would help.
-* This demo requires the ArcGIS Runtime SDK for OS X 10.2 Beta [http://resources.arcgis.com/en/help/runtime-osx-sdk/concepts/]
+* Experience with the [ArcGIS Runtime SDK for iOS] or [ArcGIS Runtime SDK for OS X](http://developers.arcgis.com/) would help.
+* This demo requires the ArcGIS Runtime SDK for OS X 10.2 Beta [http://developers.arcgis.com/en/os-x/]
 
 ## Resources
 
-* [ArcGIS Runtime SDK for OS X](http://resources.arcgis.com/en/communities/runtime-osx-sdk/)
+* [ArcGIS Runtime SDK for OS X](http://developers.arcgis.com/en/os-x/)
 * [ArcGIS Blog](http://blogs.esri.com/esri/arcgis/)
 * [twitter@arcgis_runtime](http://twitter.com/arcgis_runtime)
 
@@ -59,5 +61,5 @@ limitations under the License.
 
 A copy of the license is available in the repository's [license.txt]( https://raw.github.com/Esri/switch-basemaps-js/master/license.txt) file.
 
-[](Esri Tags: OS X Mac EAF Sample)
+[](Esri Tags: OS X Mac EAF Sample ArcGIS)
 [](Esri Language: Objective-C)
