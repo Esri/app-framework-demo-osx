@@ -288,29 +288,29 @@ NSString *const EAFMeasureLayerName = @"Measure Layer";
 
 #pragma mark AGSMapViewTouchDelegate
 
--(void)mapView:(AGSMapView *)mapView didClickAtPoint:(CGPoint)screen mapPoint:(AGSPoint *)mappoint graphics:(NSDictionary *)graphics{
-    [_sgl mapView:mapView didClickAtPoint:screen mapPoint:mappoint graphics:graphics];
+-(void)mapView:(AGSMapView *)mapView didClickAtPoint:(CGPoint)screen mapPoint:(AGSPoint *)mappoint features:(NSDictionary *)features{
+    [_sgl mapView:mapView didClickAtPoint:screen mapPoint:mappoint features:features];
 }
 
 -(void)mapView:(AGSMapView *)mapView didMoveMouseToPoint:(CGPoint)screen mapPoint:(AGSPoint*)mappoint{
 //    NSLog(@"mouse moved: %@", mappoint);
-    self.currentMousePointTextField.stringValue = [[AGSGeometryEngine defaultGeometryEngine]degreesMinutesSecondsForPoint:mappoint numDigits:2];
+    self.currentMousePointTextField.stringValue = [mappoint degreesMinutesSecondsStringWithNumDigits:2];
 }
 
--(void)mapView:(AGSMapView *)mapView didTapAndHoldAtPoint:(CGPoint)screen mapPoint:(AGSPoint *)mappoint graphics:(NSDictionary *)graphics{
-    [_sgl mapView:mapView didTapAndHoldAtPoint:screen mapPoint:mappoint graphics:graphics];
+-(void)mapView:(AGSMapView *)mapView didTapAndHoldAtPoint:(CGPoint)screen mapPoint:(AGSPoint *)mappoint features:(NSDictionary *)features{
+    [_sgl mapView:mapView didTapAndHoldAtPoint:screen mapPoint:mappoint features:features];
 }
 
--(void)mapView:(AGSMapView *)mapView didEndTapAndHoldAtPoint:(CGPoint)screen mapPoint:(AGSPoint *)mappoint graphics:(NSDictionary *)graphics{
-    [_sgl mapView:mapView didEndTapAndHoldAtPoint:screen mapPoint:mappoint graphics:graphics];
+-(void)mapView:(AGSMapView *)mapView didEndTapAndHoldAtPoint:(CGPoint)screen mapPoint:(AGSPoint *)mappoint features:(NSDictionary *)features{
+    [_sgl mapView:mapView didEndTapAndHoldAtPoint:screen mapPoint:mappoint features:features];
 }
 
--(BOOL)mapView:(AGSMapView *)mapView didMouseDownAtPoint:(CGPoint)screen mapPoint:(AGSPoint *)mappoint graphics:(NSDictionary *)graphics{
-    return [_sgl mapView:mapView didMouseDownAtPoint:screen mapPoint:mappoint graphics:graphics];
+-(BOOL)mapView:(AGSMapView *)mapView didMouseDownAtPoint:(CGPoint)screen mapPoint:(AGSPoint *)mappoint features:(NSDictionary *)features{
+    return [_sgl mapView:mapView didMouseDownAtPoint:screen mapPoint:mappoint features:features];
 }
 
 -(void)mapView:(AGSMapView *)mapView didMouseDragToPoint:(CGPoint)screen mapPoint:(AGSPoint *)mappoint{
-    self.currentMousePointTextField.stringValue = [[AGSGeometryEngine defaultGeometryEngine]degreesMinutesSecondsForPoint:mappoint numDigits:2];
+    self.currentMousePointTextField.stringValue = [mappoint degreesMinutesSecondsStringWithNumDigits:2];
     [_sgl mapView:mapView didMouseDragToPoint:screen mapPoint:mappoint];
 }
 

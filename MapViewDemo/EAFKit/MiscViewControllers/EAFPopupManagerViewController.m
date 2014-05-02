@@ -164,7 +164,7 @@
     // workaround
     AGSSymbol *s = hlGraphic.symbol;
     if (!s){
-        s = [popup.featureLayer.renderer symbolForGraphic:hlGraphic timeExtent:[EAFAppContext sharedAppContext].mapView.timeExtent];
+        s = [popup.featureLayer.renderer symbolForFeature:hlGraphic timeExtent:[EAFAppContext sharedAppContext].mapView.timeExtent];
     }
     hlGraphic.symbol = s;
     
