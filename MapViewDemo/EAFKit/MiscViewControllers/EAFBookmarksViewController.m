@@ -105,7 +105,7 @@
 -(void)addBookmarkAsGraphic:(AGSWebMapBookmark*)bkmk sym:(AGSSymbol*)sym{
     AGSGraphic *g = [AGSGraphic graphicWithGeometry:bkmk.extent.center symbol:sym attributes:nil infoTemplateDelegate:self];
     [g setAttribute:bkmk.name forKey:@"name"];
-    NSString *locString = [[AGSGeometryEngine defaultGeometryEngine] degreesMinutesSecondsForPoint:bkmk.extent.center numDigits:2];
+    NSString *locString = [bkmk.extent.center degreesMinutesSecondsStringWithNumDigits:2];
     //        AGSPoint *wgs84Point = (AGSPoint*)[[AGSGeometryEngine defaultGeometryEngine] projectGeometry:g.geometry toSpatialReference:[AGSSpatialReference wgs84SpatialReference]];
     //        NSString *locString = [NSString stringWithFormat:@"%.3f, %.3f", wgs84Point.x, wgs84Point.y];
     [g setAttribute:locString forKey:@"location"];

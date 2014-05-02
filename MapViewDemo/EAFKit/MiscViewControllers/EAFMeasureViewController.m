@@ -251,7 +251,7 @@ NSString *const EAFMeasureLayerName = @"Measure Layer";
         
         if (row == 0){
             AGSPoint *p = [_poly pointOnPath:0 atIndex:0];
-            return [[AGSGeometryEngine defaultGeometryEngine] degreesMinutesSecondsForPoint:p numDigits:2];
+            return [p degreesMinutesSecondsStringWithNumDigits:2];
         }
         else{
             EAFLineSegment *seg = [_segments objectAtIndex:row-1];
